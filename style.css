@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+    background-color: #7e0459;
+    font-family: system-ui, -apple-system, Verdana, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li{
+    position: relative;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style-type: none;
+    background-color: rgb(222, 220, 220);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+
+li:hover .iconbtn{
+    display: block;
+    
+}
+
+
+
+#pending-el{
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+
+.fa-plus{
+    font-size: x-large;
+    font-weight:900;
+}
+#add-todo{
+    font-size: large;
+    font-weight:900;
+    color: white;
+    background-color: #79155B;
+    margin-left: 10px;
+    border: none;
+    padding: 5px;
+    height: 33px;
+    width: 31px;
+}
+
+#input-box{
+    height: 30px;
+    width: 345px;
+    outline: none;
+    padding: 5px;
+}
+/* .logo{
+    color: white;
+} */
+
+.fa-trash{
+    color: white;
+}
+
+.iconbtn{
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    padding: 12.5px;
+    background-color: #b4067f;
+}
+.container{
+    margin-left: 500px;
+    margin-top: 200px;
+    background-color: #fafafa;
+    padding: 30px;
+    width: 400px;
+    position: relative;
+    padding-bottom: 90px;
+    box-shadow: 1px 1px 10px 1px black;
+}
+
+#reset-el{
+    position: absolute;
+    bottom: 15px;
+    left: 380px;
+    border: none;
+    color: white;
+    background-color: #79155B;
+    padding: 7px;
+    display: none;
+}
+
+@media (min-width: 360px) and (max-width: 760px)  {
+   
+     .container {
+            margin: 0 auto; 
+            width: 315px; 
+            margin-top: 150px; 
+            padding: 20px;
+            padding-bottom: 60px; 
+        }
+        
+        #input-box{
+            width: 245px;
+        }
+        li{
+            width: 280px;
+        }
+
+        #reset-el {
+            left: 270px;
+        }
+}
