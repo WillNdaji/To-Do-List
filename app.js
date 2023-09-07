@@ -52,6 +52,13 @@ iconBtn.addEventListener("click", function() {
   console.log("button clicked");
 });
 
+  listItem.addEventListener("click", function(){
+  iconBtn.style.display = "block "
+  console.log(iconBtn)
+
+})
+
+
 })
   function updatePendingTasks(){
     if(liArray.length === 1){
